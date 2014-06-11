@@ -4,6 +4,8 @@ require 'sinatra'
 
 @@rolodex = Rolodex.new
 
+@@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+
 get '/' do 
   @crm_app_name = "My CRM"
 	erb :index
@@ -15,6 +17,11 @@ end
 
 get "/contacts/new" do 
   erb :new_contact
+end
+
+get "/contacts/:id" do
+  @contact = @@rolodex.find(params[:id].to_i)
+  erb :show_contact
 end
 
 post '/contacts' do

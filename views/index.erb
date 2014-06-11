@@ -2,15 +2,24 @@
 <html lang="En">
 
   <head>
-<!--   <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <title>Steve's CRM</title>  
   </head>
+  
+
   <body>
-      <h1> Welcome to <%= @crm_app_name %> </h1>
-        <p> Main Menu </p>
-          <ul>
-            <li><a href="contacts">View all contacts</a></li>
-            <li><a href="contacts/new"> Add new contact </a></li>
-          </ul>
+    <div class="jumbotron">
+      <h1>Welcome to Steve's CRM!!!!</h1>
+        <p>A powerful Customer Relations Manager</p>
+        <p><a class="btn btn-primary btn-lg" role="button" href="contacts/new">Get Started!!!</a></p>
+    </div>
+    
+      <ul>
+        <li><a href="contacts">View all contacts</a></li>
+        <li><a href="contacts/new"> Add new contact </a></li>
+        <li><a href="contacts/show_contact"> Show Contact </a></li>
+      </ul>
+
   </body>
+
+
 </html>
