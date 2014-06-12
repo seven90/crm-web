@@ -19,3 +19,9 @@ body {
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
   }
+
+    .input {
+      -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
+      -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+      box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    }
