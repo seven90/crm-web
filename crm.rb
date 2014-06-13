@@ -79,6 +79,7 @@ end
 delete "/contacts/:id" do
 @contact = Contact.get(params[:id].to_i) 
   @contact.destroy 
+  redirect to ("/contacts")
 end
 
 
